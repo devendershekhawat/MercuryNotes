@@ -5,6 +5,9 @@
 	"repository": "https://github.com/devendershekhawat/MercuryNotes.git",
 	"author": "Devender Shekhawat <devender.shekhawat0296@gmail.com>",
 	"license": "MIT",
+	"scripts": {
+		"format": "prettier --write \"src/**/*.{js,jsx}\""
+	},
 	"devDependencies": {
 		"eslint": "^8.14.0",
 		"eslint-config-prettier": "^8.5.0",
