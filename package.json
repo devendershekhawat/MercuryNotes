@@ -1,0 +1,16 @@
+{
+	"name": "mercury-notes",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "https://github.com/devendershekhawat/MercuryNotes.git",
+	"author": "Devender Shekhawat <devender.shekhawat0296@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^8.14.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.29.4",
+		"prettier": "^2.6.2"
+	}
+}
