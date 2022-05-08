@@ -26,10 +26,13 @@
 		"sass": "^1.51.0"
 	},
 	"dependencies": {
-		"dotenv": "^16.0.0",
+		"@ant-design/icons": "^4.7.0",
+		"antd": "^4.20.2",
 		"firebase": "^9.8.0",
+		"loadash": "^1.0.0",
 		"react": "^18.1.0",
 		"react-dom": "^18.1.0",
+		"react-router-dom": "^6.3.0",
 		"styled-components": "^5.3.5"
 	}
 }

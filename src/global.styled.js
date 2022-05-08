@@ -1,9 +1,27 @@
-import styled from 'styled-components';
+import { css } from 'styled-components';
 
-export const Flex = styled.div`
+export const Flex = css`
 	display: flex;
 `;
 
-export const FlexColumn = styled(Flex)`
+export const FlexColumn = css`
+	${Flex};
 	flex-direction: column;
+`;
+
+export const FullHeight = css`
+	height: 100vh;
+`;
+
+export const Fixed = css`
+	position: fixed;
+`;
+
+export const FlexStart = css`
+	justify-content: flex-start;
+`;
+
+export const FlexCenter = css`
+	justify-content: center;
+	align-items: center;
 `;

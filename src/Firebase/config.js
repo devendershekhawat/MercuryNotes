@@ -1,28 +1,32 @@
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
-
-const {
-	FIREBASE_API_KEY,
-	FIREBASE_AUTH_DOMAIN,
-	FIREBASE_PROJECT_ID,
-	FIREBASE_STORAGE_BUCKET,
-	FIREBASE_MESSAGING_SENDER_ID,
-	FIREBASE_APP_ID,
-	FIREBASE_MEASUREMENT_ID
-} = process.env;
+import {
+	getAuth,
+	onAuthStateChanged,
+	signInWithPopup,
+	GoogleAuthProvider,
+	TwitterAuthProvider,
+	signOut
+} from 'firebase/auth';
 
 const firebaseConfig = {
-	apiKey: FIREBASE_API_KEY,
-	authDomain: FIREBASE_AUTH_DOMAIN,
-	projectId: FIREBASE_PROJECT_ID,
-	storageBucket: FIREBASE_STORAGE_BUCKET,
-	messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
-	appId: FIREBASE_APP_ID,
-	measurementId: FIREBASE_MEASUREMENT_ID
+	apiKey: 'AIzaSyAf9FqAePmbwqOpr2S1jUiMorK8NiRrYAA',
+	authDomain: 'mercurynotes-app.firebaseapp.com',
+	projectId: 'mercurynotes-app',
+	storageBucket: 'mercurynotes-app.appspot.com',
+	messagingSenderId: '484729847018',
+	appId: '1:484729847018:web:cd485c289c1d89ed472b93',
+	measurementId: 'G-98GWPD51YH'
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
 export const analytics = getAnalytics(app);
 export const auth = getAuth(app);
-export { onAuthStateChanged };
+
+export {
+	onAuthStateChanged,
+	GoogleAuthProvider,
+	signInWithPopup,
+	TwitterAuthProvider,
+	signOut
+};
